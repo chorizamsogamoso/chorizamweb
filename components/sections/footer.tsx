@@ -14,7 +14,7 @@ export function Footer() {
           <div className="space-y-4">
             <a href="/" className="flex items-center gap-2 group">
               <Flame className="w-8 h-8 text-accent transition-transform group-hover:scale-110" />
-              <span className="text-xl font-bold tracking-tight">CHORISAM</span>
+              <span className="text-xl font-bold tracking-tight">CHORIZAM</span>
             </a>
             <p className="text-background/70 text-sm leading-relaxed">
               {description}
@@ -82,7 +82,7 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-background/20 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-sm text-background/60">
-            &copy; {new Date().getFullYear()} CHORISAM. Todos los derechos reservados.
+            &copy; {new Date().getFullYear()} CHORIZAM. Todos los derechos reservados.
           </p>
           <p className="text-sm text-background/60">
             Hecho con <span className="text-accent">fuego</span> y tradición

@@ -81,7 +81,7 @@ export function Hero() {
                 className="absolute inset-8 rounded-full bg-cover bg-center shadow-2xl"
                 style={{
                   backgroundColor: "oklch(0.40 0.12 30)",
-                  backgroundImage: "url('/images/hero-chorizo.jpg')",
+                  backgroundImage: "url('/assets/foto%20sandra%20chorizo.png')",
                 }}
               />
 

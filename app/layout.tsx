@@ -7,7 +7,7 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'CHORISAM | Chorizos Artesanales al Carbón',
+  title: 'CHORIZAM | Chorizos Artesanales al Carbón',
   description: 'Chorizos artesanales preparados al carbón con el sabor auténtico de la tradición colombiana. Acompañados de arepa, papa y queso costeño.',
   generator: 'v0.app',
   icons: {

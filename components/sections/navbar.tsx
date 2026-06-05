@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { navLinks } from "@/data/products";
 import { Menu, X, Flame } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -14,11 +15,15 @@ export function Navbar() {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 group">
-            <Flame className="w-8 h-8 text-primary transition-transform group-hover:scale-110" />
-            <span className="text-xl font-bold text-foreground tracking-tight">
-              CHORISAM
-            </span>
+          <Link href="/" className="flex items-center group">
+            <div className="relative w-40 h-16 sm:w-48 transition-transform group-hover:scale-105">
+              <Image
+                src="/assets/logo3.png"
+                alt="CHORIZAM Logo"
+                fill
+                className="object-contain object-left scale-110 origin-left"
+              />
+            </div>
           </Link>
 
           {/* Desktop Navigation */}

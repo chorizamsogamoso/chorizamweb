@@ -22,7 +22,7 @@ export function Benefits() {
             Nuestra Diferencia
           </h2>
           <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">
-            En CHORISAM nos dedicamos a crear la mejor experiencia de chorizos
+            En CHORIZAM nos dedicamos a crear la mejor experiencia de chorizos
             artesanales, manteniendo viva la tradición colombiana.
           </p>
         </div>

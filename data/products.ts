@@ -1,4 +1,4 @@
-// CHORISAM - Product and Content Data
+// CHORIZAM - Product and Content Data
 // Separación de datos y UI para facilitar edición futura
 
 export interface Product {
@@ -41,7 +41,7 @@ export const navLinks: NavLink[] = [
 // Hero Section Content
 export const heroContent: HeroContent = {
   tagline: "Tradición al carbón",
-  title: "CHORISAM",
+  title: "CHORIZAM",
   subtitle:
     "Chorizos artesanales preparados al carbón, con el sabor auténtico de la tradición colombiana. Cada bocado cuenta una historia.",
   ctaText: "Ver Productos",
@@ -152,7 +152,7 @@ export const footerContent = {
     "Chorizos artesanales preparados al carbón con el sabor auténtico de la tradición colombiana.",
   address: "Calle del Sabor #123, Colombia",
   phone: "+57 300 123 4567",
-  email: "hola@chorisam.com",
+  email: "hola@chorizam.com",
   social: {
     instagram: "#",
     facebook: "#",

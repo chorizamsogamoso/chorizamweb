@@ -4,9 +4,9 @@ import { Footer } from "@/components/sections/footer";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Nosotros | CHORISAM",
+  title: "Nosotros | CHORIZAM",
   description:
-    "Conoce la historia y los valores detrás de CHORISAM. Chorizos artesanales al carbón con tradición colombiana.",
+    "Conoce la historia y los valores detrás de CHORIZAM. Chorizos artesanales al carbón con tradición colombiana.",
 };
 
 export default function Nosotros() {
@@ -30,7 +30,7 @@ export default function Nosotros() {
             Nosotros
           </h1>
           <p className="mt-6 text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            En CHORISAM nos dedicamos a crear la mejor experiencia de chorizos
+            En CHORIZAM nos dedicamos a crear la mejor experiencia de chorizos
             artesanales, manteniendo viva la tradición colombiana con cada
             preparación al carbón.
           </p>
