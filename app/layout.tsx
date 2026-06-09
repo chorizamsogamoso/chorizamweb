@@ -18,21 +18,9 @@ export const metadata: Metadata = {
   description: 'Chorizos artesanales preparados al carbón con el sabor auténtico de la tradición colombiana. Acompañados de arepa, papa y queso costeño.',
   generator: 'v0.app',
   icons: {
-    icon: [
-      {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
-      },
-    ],
-    apple: '/apple-icon.png',
+    icon: '/assets/favicon_square.png',
+    shortcut: '/assets/favicon_square.png',
+    apple: '/assets/favicon_square.png',
   },
 }
 
