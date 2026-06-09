@@ -1,6 +1,7 @@
 import { Navbar } from "@/components/sections/navbar";
 import { Benefits } from "@/components/sections/benefits";
 import { Footer } from "@/components/sections/footer";
+import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -29,7 +30,26 @@ export default function Nosotros() {
           <h1 className="text-5xl sm:text-6xl font-bold text-foreground tracking-tight">
             Nosotros
           </h1>
-          <p className="mt-6 text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+
+          <div className="relative max-w-2xl mx-auto mt-16 mb-16">
+            {/* Elemento decorativo de fondo (sombra/resplandor desplazado) */}
+            <div className="absolute -inset-4 bg-gradient-to-br from-primary/30 to-accent/20 rounded-[2rem] transform -rotate-2 opacity-60 blur-sm transition-transform duration-700 group-hover:rotate-0" />
+            <div className="absolute -inset-2 bg-gradient-to-tr from-accent/40 to-primary/30 rounded-[1.8rem] transform rotate-1 transition-transform duration-700 group-hover:-rotate-1" />
+            
+            {/* Contenedor principal de la imagen */}
+            <div className="group relative w-full aspect-[16/9] overflow-hidden rounded-2xl shadow-2xl ring-4 ring-background border border-border/50">
+              <Image
+                src="/assets/Nosotros.png"
+                alt="El equipo de CHORIZAM"
+                fill
+                className="object-cover transition-transform hover:scale-105 duration-700"
+              />
+              {/* Overlay sutil para darle un look más premium */}
+              <div className="absolute inset-0 bg-gradient-to-t from-background/40 to-transparent opacity-0 transition-opacity duration-700 group-hover:opacity-100" />
+            </div>
+          </div>
+
+          <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
             En CHORIZAM nos dedicamos a crear la mejor experiencia de chorizos
             artesanales, manteniendo viva la tradición colombiana con cada
             preparación al carbón.

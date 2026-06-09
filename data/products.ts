@@ -55,7 +55,7 @@ export const featuredProduct: Product = {
     "Nuestro chorizo estrella, preparado con carne seleccionada y especias tradicionales. Asado lentamente al carbón para lograr ese sabor ahumado único que nos caracteriza.",
   price: 15000,
   size: "15 cm",
-  image: "/images/featured-chorizo.jpg",
+  image: "/assets/ProductoPrincipal.png",
   badge: "Más Vendido",
   isFeature: true,
 };

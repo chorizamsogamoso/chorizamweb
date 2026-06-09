@@ -25,7 +25,7 @@ export function Hero() {
           {/* Content */}
           <div className="space-y-8 text-center lg:text-left">
             <div className="inline-flex items-center gap-2">
-              <BadgeCustom variant="secondary">
+              <BadgeCustom variant="secondary" className="font-heading">
                 <Flame className="w-3 h-3 mr-1" />
                 {tagline}
               </BadgeCustom>
@@ -35,7 +35,7 @@ export function Hero() {
               {title}
             </h1>
 
-            <p className="text-lg sm:text-xl text-muted-foreground max-w-xl mx-auto lg:mx-0 leading-relaxed">
+            <p className="font-heading text-lg sm:text-xl text-muted-foreground max-w-xl mx-auto lg:mx-0 leading-relaxed">
               {subtitle}
             </p>
 
@@ -73,26 +73,22 @@ export function Hero() {
           <div className="relative">
             <div className="relative aspect-square max-w-md mx-auto">
               {/* Decorative circles */}
-              <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary/20 to-accent/20 animate-pulse" />
-              <div className="absolute inset-4 rounded-full bg-gradient-to-tr from-accent/30 to-primary/30" />
-              
+              <div className="absolute -inset-8 rounded-full bg-gradient-to-br from-primary/20 to-accent/20 animate-pulse" />
+              <div className="absolute -inset-4 rounded-full bg-gradient-to-tr from-accent/30 to-primary/30" />
+
               {/* Main image container */}
               <div
-                className="absolute inset-8 rounded-full bg-cover bg-center shadow-2xl"
+                className="absolute inset-0 rounded-full bg-no-repeat shadow-2xl"
                 style={{
-                  backgroundColor: "oklch(0.40 0.12 30)",
-                  backgroundImage: "url('/assets/foto%20sandra%20chorizo.png')",
+                  backgroundImage: "url('/assets/Hero.png')",
+                  backgroundSize: "cover",
+                  backgroundPosition: "65% 50%",
                 }}
               />
 
               {/* Floating elements */}
               <div className="absolute -top-4 -right-4 bg-card p-3 rounded-xl shadow-lg animate-bounce">
                 <Flame className="w-6 h-6 text-accent" />
-              </div>
-              <div className="absolute -bottom-4 -left-4 bg-card px-4 py-2 rounded-xl shadow-lg">
-                <p className="text-sm font-semibold text-card-foreground">
-                  Hecho con amor
-                </p>
               </div>
             </div>
           </div>
