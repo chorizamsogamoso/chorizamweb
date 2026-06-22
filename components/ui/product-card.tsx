@@ -26,10 +26,11 @@ export function ProductCard({ product, className }: ProductCardProps) {
       {/* Image Container */}
       <div className="relative aspect-square overflow-hidden bg-muted">
         <div
-          className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+          className="absolute inset-0 bg-cover transition-transform duration-500 group-hover:scale-110"
           style={{
             backgroundImage: `url(${image})`,
             backgroundColor: "oklch(0.45 0.08 30)",
+            backgroundPosition: product.imagePosition || "center",
           }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-foreground/20 to-transparent" />
@@ -60,11 +61,15 @@ export function ProductCard({ product, className }: ProductCardProps) {
           {description}
         </p>
 
-        <div className="flex items-center justify-between pt-2">
+        <div className="flex flex-wrap items-center justify-between gap-3 pt-3 mt-1 border-t border-border/50">
           <span className="text-lg font-bold text-primary">
             {formatPrice(price)}
           </span>
-          <Button size="sm" className="transition-transform hover:scale-105">
+          <Button
+            size="sm"
+            className="transition-transform hover:scale-105"
+            onClick={() => window.open(`https://wa.me/573006432060?text=Hola,%20quisiera%20ordenar%20el%20${encodeURIComponent(name)}`, '_blank')}
+          >
             Ordenar
           </Button>
         </div>

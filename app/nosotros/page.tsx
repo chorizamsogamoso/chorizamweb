@@ -15,7 +15,7 @@ export default function Nosotros() {
     <main className="min-h-screen">
       <Navbar />
       {/* Hero section for Nosotros */}
-      <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden pt-16">
+      <section className="relative min-h-[50vh] sm:min-h-[60vh] flex items-center justify-center overflow-hidden pt-16">
         {/* Background Pattern — same as home */}
         <div className="absolute inset-0 bg-gradient-to-br from-background via-secondary/30 to-background" />
         <div
@@ -26,20 +26,20 @@ export default function Nosotros() {
           }}
         />
 
-        <div className="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
-          <h1 className="text-5xl sm:text-6xl font-bold text-foreground tracking-tight">
+        <div className="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20 text-center">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-foreground tracking-tight">
             Nosotros
           </h1>
 
-          <div className="relative max-w-2xl mx-auto mt-16 mb-16">
+          <div className="relative max-w-xs sm:max-w-sm md:max-w-2xl mx-auto mt-10 sm:mt-16 mb-10 sm:mb-16">
             {/* Elemento decorativo de fondo (sombra/resplandor desplazado) */}
             <div className="absolute -inset-4 bg-gradient-to-br from-primary/30 to-accent/20 rounded-[2rem] transform -rotate-2 opacity-60 blur-sm transition-transform duration-700 group-hover:rotate-0" />
             <div className="absolute -inset-2 bg-gradient-to-tr from-accent/40 to-primary/30 rounded-[1.8rem] transform rotate-1 transition-transform duration-700 group-hover:-rotate-1" />
-            
+
             {/* Contenedor principal de la imagen */}
-            <div className="group relative w-full aspect-[16/9] overflow-hidden rounded-2xl shadow-2xl ring-4 ring-background border border-border/50">
+            <div className="group relative w-full aspect-[4/3] sm:aspect-[16/9] overflow-hidden rounded-2xl shadow-2xl ring-4 ring-background border border-border/50">
               <Image
-                src="/assets/Nosotros.png"
+                src="/assets/ComboCompleto.png"
                 alt="El equipo de CHORIZAM"
                 fill
                 className="object-cover transition-transform hover:scale-105 duration-700"
@@ -49,7 +49,7 @@ export default function Nosotros() {
             </div>
           </div>
 
-          <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
             En CHORIZAM nos dedicamos a crear la mejor experiencia de chorizos
             artesanales, manteniendo viva la tradición colombiana con cada
             preparación al carbón.

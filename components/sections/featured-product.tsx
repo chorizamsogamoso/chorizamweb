@@ -23,7 +23,7 @@ export function FeaturedProduct() {
         <div className="bg-card rounded-2xl overflow-hidden shadow-xl border border-border">
           <div className="grid lg:grid-cols-2 gap-0">
             {/* Image */}
-            <div className="relative aspect-square lg:aspect-auto min-h-[400px]">
+            <div className="relative aspect-[4/3] sm:aspect-square lg:aspect-auto lg:min-h-[400px]">
               <div
                 className="absolute inset-0 bg-cover bg-center"
                 style={{
@@ -45,8 +45,8 @@ export function FeaturedProduct() {
             </div>
 
             {/* Content */}
-            <div className="p-8 lg:p-12 flex flex-col justify-center">
-              <div className="space-y-6">
+            <div className="p-6 sm:p-8 lg:p-12 flex flex-col justify-center">
+              <div className="space-y-4 sm:space-y-6">
                 <div className="flex items-center gap-2">
                   <Flame className="w-6 h-6 text-accent" />
                   <span className="text-sm font-medium text-accent">
@@ -63,7 +63,7 @@ export function FeaturedProduct() {
                 </p>
 
                 {/* Features */}
-                <div className="flex flex-wrap gap-4">
+                <div className="flex flex-wrap gap-3">
                   <div className="flex items-center gap-2 bg-secondary px-3 py-2 rounded-lg">
                     <Ruler className="w-4 h-4 text-primary" />
                     <span className="text-sm font-medium text-secondary-foreground">
@@ -79,7 +79,7 @@ export function FeaturedProduct() {
                 </div>
 
                 {/* Price and CTA */}
-                <div className="flex items-center justify-between pt-4 border-t border-border">
+                <div className="flex flex-col xs:flex-row xs:items-center justify-between gap-4 pt-4 border-t border-border">
                   <div>
                     <p className="text-sm text-muted-foreground">Precio</p>
                     <p className="text-3xl font-bold text-primary">
@@ -88,7 +88,8 @@ export function FeaturedProduct() {
                   </div>
                   <Button
                     size="lg"
-                    className="transition-all hover:scale-105 hover:shadow-lg"
+                    className="transition-all hover:scale-105 hover:shadow-lg w-full xs:w-auto"
+                    onClick={() => window.open(`https://wa.me/573006432060?text=Hola,%20quisiera%20ordenar%20el%20${encodeURIComponent(name)}`, '_blank')}
                   >
                     Ordenar Ahora
                   </Button>

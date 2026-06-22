@@ -20,10 +20,10 @@ export function Hero() {
         }}
       />
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Content */}
-          <div className="space-y-8 text-center lg:text-left">
+          <div className="space-y-6 sm:space-y-8 text-center lg:text-left">
             <div className="inline-flex items-center gap-2">
               <BadgeCustom variant="secondary" className="font-heading">
                 <Flame className="w-3 h-3 mr-1" />
@@ -31,18 +31,18 @@ export function Hero() {
               </BadgeCustom>
             </div>
 
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-foreground tracking-tight">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-foreground tracking-tight leading-tight">
               {title}
             </h1>
 
-            <p className="font-heading text-lg sm:text-xl text-muted-foreground max-w-xl mx-auto lg:mx-0 leading-relaxed">
+            <p className="font-heading text-base sm:text-lg md:text-xl text-muted-foreground max-w-xl mx-auto lg:mx-0 leading-relaxed">
               {subtitle}
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Button
                 size="lg"
-                className="group transition-all hover:scale-105"
+                className="group transition-all hover:scale-105 w-full sm:w-auto"
                 onClick={() => document.getElementById('productos')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 {ctaText}
@@ -51,27 +51,27 @@ export function Hero() {
             </div>
 
             {/* Stats */}
-            <div className="flex items-center justify-center lg:justify-start gap-8 pt-8">
+            <div className="flex flex-wrap items-center justify-center lg:justify-start gap-6 pt-4">
               <div className="text-center">
-                <p className="text-3xl font-bold text-primary">15cm</p>
+                <p className="text-2xl sm:text-3xl font-bold text-primary">15cm</p>
                 <p className="text-sm text-muted-foreground">Tamaño</p>
               </div>
-              <div className="w-px h-12 bg-border" />
+              <div className="w-px h-10 bg-border hidden xs:block" />
               <div className="text-center">
-                <p className="text-3xl font-bold text-primary">100%</p>
+                <p className="text-2xl sm:text-3xl font-bold text-primary">100%</p>
                 <p className="text-sm text-muted-foreground">Artesanal</p>
               </div>
-              <div className="w-px h-12 bg-border" />
+              <div className="w-px h-10 bg-border hidden xs:block" />
               <div className="text-center">
-                <p className="text-3xl font-bold text-primary">Al</p>
+                <p className="text-2xl sm:text-3xl font-bold text-primary">Al</p>
                 <p className="text-sm text-muted-foreground">Carbón</p>
               </div>
             </div>
           </div>
 
-          {/* Hero Image */}
-          <div className="relative">
-            <div className="relative aspect-square max-w-md mx-auto">
+          {/* Hero Image — appears above content on mobile */}
+          <div className="relative order-first lg:order-last">
+            <div className="relative aspect-square max-w-[260px] sm:max-w-sm md:max-w-md mx-auto">
               {/* Decorative circles */}
               <div className="absolute -inset-8 rounded-full bg-gradient-to-br from-primary/20 to-accent/20 animate-pulse" />
               <div className="absolute -inset-4 rounded-full bg-gradient-to-tr from-accent/30 to-primary/30" />
@@ -80,7 +80,7 @@ export function Hero() {
               <div
                 className="absolute inset-0 rounded-full bg-no-repeat shadow-2xl"
                 style={{
-                  backgroundImage: "url('/assets/Hero.png')",
+                  backgroundImage: "url('/assets/FotoHero.png')",
                   backgroundSize: "cover",
                   backgroundPosition: "65% 50%",
                 }}

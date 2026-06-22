@@ -8,11 +8,11 @@ export function Footer() {
 
   return (
     <footer className="bg-foreground text-background">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid md:grid-cols-3 gap-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 sm:gap-10 md:gap-12">
           {/* Brand */}
-          <div className="space-y-4">
-            <a href="/" className="flex items-center gap-2 group">
+          <div className="space-y-4 sm:col-span-2 md:col-span-1 text-center sm:text-left">
+            <a href="/" className="inline-flex items-center gap-2 group">
               <Flame className="w-8 h-8 text-accent transition-transform group-hover:scale-110" />
               <span className="text-xl font-bold tracking-tight">CHORIZAM</span>
             </a>
@@ -42,7 +42,7 @@ export function Footer() {
                 <Mail className="w-4 h-4 text-accent flex-shrink-0" />
                 <a
                   href={`mailto:${email}`}
-                  className="text-sm text-background/70 hover:text-background transition-colors"
+                  className="text-sm text-background/70 hover:text-background transition-colors break-all"
                 >
                   {email}
                 </a>
@@ -56,6 +56,8 @@ export function Footer() {
             <div className="flex gap-4">
               <a
                 href={social.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 flex items-center justify-center rounded-full bg-background/10 hover:bg-accent hover:text-foreground transition-all"
                 aria-label="Instagram"
               >
@@ -63,24 +65,19 @@ export function Footer() {
               </a>
               <a
                 href={social.facebook}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 flex items-center justify-center rounded-full bg-background/10 hover:bg-accent hover:text-foreground transition-all"
                 aria-label="Facebook"
               >
                 <Facebook className="w-5 h-5" />
-              </a>
-              <a
-                href={social.whatsapp}
-                className="w-10 h-10 flex items-center justify-center rounded-full bg-background/10 hover:bg-accent hover:text-foreground transition-all"
-                aria-label="WhatsApp"
-              >
-                <MessageCircle className="w-5 h-5" />
               </a>
             </div>
           </div>
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-12 pt-8 border-t border-background/20 flex flex-col sm:flex-row justify-between items-center gap-4">
+        <div className="mt-10 sm:mt-12 pt-8 border-t border-background/20 flex flex-col sm:flex-row justify-between items-center gap-3 text-center sm:text-left">
           <p className="text-sm text-background/60">
             &copy; {new Date().getFullYear()} CHORIZAM. Todos los derechos reservados.
           </p>

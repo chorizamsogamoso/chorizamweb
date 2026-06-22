@@ -8,6 +8,7 @@ export interface Product {
   price: number;
   size: string;
   image: string;
+  imagePosition?: string;
   badge?: string;
   isFeature?: boolean;
 }
@@ -93,7 +94,8 @@ export const products: Product[] = [
     description: "Chorizo, arepa, papa y queso costeño. La experiencia total.",
     price: 28000,
     size: "15 cm",
-    image: "/assets/Nosotros.png",
+    image: "/assets/ComboCompleto.png",
+    imagePosition: "20% center",
     badge: "Recomendado",
   },
 ];
@@ -136,11 +138,10 @@ export const footerContent = {
     "Chorizos artesanales preparados al carbón con el sabor auténtico de la tradición colombiana.",
   address: "Calle del Sabor #123, Colombia",
   phone: "+57 300 123 4567",
-  email: "hola@chorizam.com",
+  email: "Chorisamsogamoso@gmail.com",
   social: {
-    instagram: "#",
-    facebook: "#",
-    whatsapp: "#",
+    instagram: "https://www.instagram.com/chorizamsogamoso?igsh=dHpjc2RqZ3Z0czlv",
+    facebook: "https://www.facebook.com/share/1C1pGxpVZt/?mibextid=wwXIfr",
   },
 };
 

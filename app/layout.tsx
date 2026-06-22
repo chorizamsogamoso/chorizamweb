@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Outfit, DM_Sans } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
+import WhatsAppButton from '@/components/ui/whatsapp-button'
 import './globals.css'
 
 const outfit = Outfit({
@@ -33,6 +34,7 @@ export default function RootLayout({
     <html lang="es" className={`${outfit.variable} ${dmSans.variable} bg-background`}>
       <body className="font-sans antialiased">
         {children}
+        <WhatsAppButton phoneNumber="573006432060" />
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
     </html>
