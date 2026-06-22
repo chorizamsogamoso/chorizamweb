@@ -1,17 +1,19 @@
 import type { Metadata } from 'next'
-import { Outfit, DM_Sans } from 'next/font/google'
+import { Montserrat } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import WhatsAppButton from '@/components/ui/whatsapp-button'
 import './globals.css'
 
-const outfit = Outfit({
+const montserratHeading = Montserrat({
   subsets: ["latin"],
   variable: "--font-heading",
+  weight: ["500", "600", "700", "800", "900"],
 });
 
-const dmSans = DM_Sans({
+const montserratSans = Montserrat({
   subsets: ["latin"],
   variable: "--font-sans",
+  weight: ["300", "400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -31,7 +33,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="es" className={`${outfit.variable} ${dmSans.variable} bg-background`}>
+    <html lang="es" className={`${montserratHeading.variable} ${montserratSans.variable} bg-background`}>
       <body className="font-sans antialiased">
         {children}
         <WhatsAppButton phoneNumber="573006432060" />

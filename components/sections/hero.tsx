@@ -41,12 +41,14 @@ export function Hero() {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Button
+                asChild
                 size="lg"
                 className="group transition-all hover:scale-105 w-full sm:w-auto"
-                onClick={() => document.getElementById('productos')?.scrollIntoView({ behavior: 'smooth' })}
               >
-                {ctaText}
-                <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
+                <a href="#productos">
+                  {ctaText}
+                  <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
+                </a>
               </Button>
             </div>
 
