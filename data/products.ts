@@ -150,7 +150,7 @@ export const footerContent = {
   description:
     "Chorizos artesanales preparados al carbón con el sabor auténtico de la tradición colombiana.",
   address: "Calle del Sabor #123, Colombia",
-  phone: "+57 300 123 4567",
+  phone: "+57 312 465 4169",
   email: "chorizamsogamoso@gmail.com",
   social: {
     instagram: "https://www.instagram.com/chorizamsogamoso?igsh=dHpjc2RqZ3Z0czlv",

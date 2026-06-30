@@ -36,7 +36,7 @@ export default function RootLayout({
     <html lang="es" className={`${montserratHeading.variable} ${montserratSans.variable} bg-background`}>
       <body className="font-sans antialiased">
         {children}
-        <WhatsAppButton phoneNumber="573006432060" />
+        <WhatsAppButton phoneNumber="573124654169" />
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
     </html>
